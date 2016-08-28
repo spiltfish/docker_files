@@ -19,6 +19,5 @@ RUN /bin/bash FTBInstall.sh
 EXPOSE 25565
 
 RUN mkdir /home/minecraft/world
-RUN mount /dev/disk/by-id/google-minecraft-dev /home/minecraft/world
 
 CMD ["/bin/bash", "/home/minecraft/ServerStart.sh"]

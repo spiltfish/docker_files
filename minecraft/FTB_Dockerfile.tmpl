@@ -1,12 +1,13 @@
 from java:8
 MAINTAINER Mary Larrousse a.spilt.fish@gmail.com
 
+
 RUN useradd -ms /bin/bash minecraft
 
 USER minecraft
 WORKDIR /home/minecraft
 
-RUN wget https://www.feed-the-beast.com/projects/ftb-infinity-evolved/files/2320899/download
+RUN wget $SERVER_ZIP_URL
 RUN unzip download
 RUN rm download
 

@@ -1,7 +1,6 @@
 #!/bin/sh
 
-if [! $# -eq 1 ]
-   then
+if [ ! $# -eq 1 ]; then
     echo "Usage: ./generate_run_command.sh <server tag>"
     exit 1
 fi

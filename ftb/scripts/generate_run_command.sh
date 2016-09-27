@@ -14,4 +14,4 @@ fi
 
 touch $SERVER_TAG/docker_run.sh
 
-sed -e 's/$SERVER_TAG/'$SERVER_TAG'/g' docker_run.sh.tmpl > $SERVER_TAG/docker_run.sh
+sed -e 's/$SERVER_TAG/'$SERVER_TAG'/g' templates/docker_run.sh.tmpl > $SERVER_TAG/docker_run.sh

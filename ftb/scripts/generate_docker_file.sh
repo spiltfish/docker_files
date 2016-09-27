@@ -16,5 +16,5 @@ fi
 
 echo 'Createing Dockerfile for server '$SERVER_ZIP_URL
 
-sed -e 's|$SERVER_ZIP_URL|'$SERVER_ZIP_URL'|g' FTB_Dockerfile.tmpl > $SERVER_TAG/Dockerfile
+sed -e 's|$SERVER_ZIP_URL|'$SERVER_ZIP_URL'|g' templates/FTB_Dockerfile.tmpl > $SERVER_TAG/Dockerfile
 

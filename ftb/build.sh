@@ -16,7 +16,7 @@ function build() {
   ./scripts/generate_docker_file.sh $1 $2
   ./scripts/generate_run_command.sh $2
   
-  docker build -t $2 $2
+  docker build -t squidlegs/ftb:$2 $2
 }
 
 function publish() {
@@ -24,6 +24,8 @@ function publish() {
      then
         exit 1
   fi
+
+  docker push squidlegs/ftb:$2
 
 }
 
